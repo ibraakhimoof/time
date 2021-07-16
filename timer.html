@@ -7,35 +7,47 @@
     <title>Presidential elections</title>
     <link rel="stylesheet" href="./styles/style.css">
 </head>
-<body>
-    <!-- <div class="logo">
-        <img src="./img/logo.png" alt=""> -->
+<body>  
+    <div class="fullscreen-bg">
+        <div class="container">
+            <div class="logo_container">
+                <img src="./src/logo.png" alt="">
+            </div>
     </div>
-    <h1 class="visually-hidden">Таймер</h1>
-	<div class="time-count">
-		<h2 class="time-count__title">Saylovgacha qolgan vaqt</h2>
-		<div class="time-count__content">
-			<div class="time-count__item time-count__days">
-				<div class="time-count__val">00</div>
-				<span class="time-count__text">Kun</span>
-			</div>
-			<div class="time-count__separator">:</div>
-			<div class="time-count__item time-count__hours">
-				<div class="time-count__val">00</div>
-				<span class="time-count__text">Soat</span>
-			</div>
-			<div class="time-count__separator">:</div>
-			<div class="time-count__item time-count__minutes">
-				<div class="time-count__val">00</div>
-				<span class="time-count__text">Daqiqa</span>
-			</div>
-			<div class="time-count__separator">:</div>
-			<div class="time-count__item time-count__seconds">
-				<div class="time-count__val">00</div>
-				<span class="time-count__text">Soniya</span>
-			</div>
-		</div>
-	</div>
+        <div class="overlay">
+            <h1 class="visually-hidden">Таймер</h1>
+            <div class="time-count">
+                <h2 class="time-count__title">Saylovgacha qolgan vaqt</h2>
+                <div class="time-count__content">
+                    <div class="time-count__item time-count__days">
+                        <div class="time-count__val">00</div>
+                        <span class="time-count__text">Kun</span>
+                    </div>
+                    <div class="time-count__separator">:</div>
+                    <div class="time-count__item time-count__hours">
+                        <div class="time-count__val">00</div>
+                        <span class="time-count__text">Soat</span>
+                    </div>
+                    <div class="time-count__separator">:</div>
+                    <div class="time-count__item time-count__minutes">
+                        <div class="time-count__val">00</div>
+                        <span class="time-count__text">Daqiqa</span>
+                    </div>
+                    <div class="time-count__separator">:</div>
+                    <div class="time-count__item time-count__seconds">
+                        <div class="time-count__val">00</div>
+                        <span class="time-count__text">Soniya</span>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+       
+        <video loop="" muted="" autoplay="" poster="./src/ballot.png" class="fullscreen-bg__video">
+            <source src="./src/intro.mp4" type="video/mp4">
+        </video>
+    </div>
+  
 	<script src="./jscod/main.js"></script>
 </body>
 </html>

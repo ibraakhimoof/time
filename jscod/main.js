@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-	const newYear = new Date('Oct 23  2021 00:00:00');
+	const date = new Date('July 15  2021 23:09:00');
 	
 	const daysVal = document.querySelector('.time-count__days .time-count__val');
 	const hoursVal = document.querySelector('.time-count__hours .time-count__val');
@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 	const timeCount = () => {
 		let now = new Date();
-		let leftUntil = newYear - now;
+		let leftUntil = date - now;
 		
 		let days = Math.floor(leftUntil / 1000 / 60 / 60 / 24);
 		let hours = Math.floor(leftUntil / 1000 / 60 / 60) % 24;

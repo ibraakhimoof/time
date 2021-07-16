@@ -9,6 +9,11 @@ document.addEventListener('DOMContentLoaded', () => {
 	const timeCount = () => {
 		let now = new Date();
 		let leftUntil = date - now;
+        if (leftUntil < 0) {
+            let getElement = document.getElementById('time-count')
+            getElement.classList.add('finish_title')
+            getElement.innerText = 'Bugun saylov kuni'
+        }
 		
 		let days = Math.floor(leftUntil / 1000 / 60 / 60 / 24);
 		let hours = Math.floor(leftUntil / 1000 / 60 / 60) % 24;

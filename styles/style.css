@@ -23,17 +23,18 @@ body {
 }
  
 .fullscreen-bg__video {
-    position: absolute;
+    position: absolute;		
     top: 0;
     left: 0;
     width: 100%;
 }
 .overlay {
-    display: flex;
+	display: flex;
     justify-content: flex-end;
+    align-items: center;
     position: absolute;
-    top: 48%;
-    left: -9px;
+    top: 23%;
+    right: 2%;
     width: 100%;
     height: 100%;
     z-index: 5;
@@ -43,11 +44,11 @@ body {
     justify-content: center;
     position: relative;
     top: 35px;
-    left: 19%;
+    left: 23%;
 }
 .logo_container {
     position: relative;
-    width: 300px;
+    width: 310px;
     z-index: 4;
 }
 .logo_container img {
@@ -75,13 +76,12 @@ body {
     background: #ffffff26;
     box-shadow: 4px 8px 40px rgb(8 24 111 / 20%);
     border-radius: 30px;
-	width: 738px;  
-	height: 316px;
+	width: 50%; 	 
+	height: 50%;
 	padding: 58px 38px;
 	
 	
 }
-
 .time-count__title {
     margin: 0;
 	margin-bottom: 35px;
@@ -91,16 +91,13 @@ body {
 	text-align: center;
 	color: var(--color-dark);
 }
-
 .time-count__content {
 	display: flex;
 	justify-content: center;
 }
-
 .time-count__item {
 	text-align: center;
 }
-
 .time-count__val {
     min-width: 81px;
 	font-weight: 700;
@@ -108,7 +105,6 @@ body {
 	line-height: 82px;
 	color: var(--color-accent);
 }
-
 .time-count__separator {
     font-weight: 700;
 	font-size: 48px;
@@ -117,11 +113,69 @@ body {
 	color: var(--color-accent);
 	margin: 0 33px;
 }
-
 .time-count__text {
 	font-family: 'Noto Sans', sans-serif;
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 20px;
 	color: var(--color-dark);
+}
+@media screen and (min-width: 3840px) {
+	#time-count {
+
+	}
+	.overlay {
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		width: 105%;
+		height: 107%;
+		top: -9%;
+	}
+	.logo_container{
+		width: 25%;
+	}
+	.time-count__title {
+		font-size: 12em;
+		margin-bottom: 10%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		top: 1em;
+	}
+	.time-count__content {
+		width: 100%;
+	}
+	.time-count__val {
+		font-size: 29em;
+    	line-height: 1em;
+	}
+	.time-count__separator {
+		font-size: 14rem;
+		line-height: 2em;
+		margin: 0 0.3em;
+	}
+	/* #time-count {
+		padding: 1758px 1171px;
+	}
+	.overlay{
+		width: 10%;
+		height: 50%;
+	}
+	.time-count__title {
+		font-size: 700px;
+		margin-bottom: 1079px;
+	}
+	.time-count__val {
+		font-size: 2158px;
+	}
+	.time-count__text {
+		font-size: 431px;
+	}
+	.time-count__separator {
+		font-size: 1480px;
+		margin: 0 1017px;
+	} */
+	
 }

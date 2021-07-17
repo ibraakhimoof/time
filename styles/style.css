@@ -148,13 +148,19 @@ body {
 		width: 100%;
 	}
 	.time-count__val {
-		font-size: 29em;
-    	line-height: 1em;
+		font-size: 27em;
+		line-height: 1em;
+		font-weight: 400;
+		margin: 3rem 0;
 	}
 	.time-count__separator {
 		font-size: 14rem;
 		line-height: 2em;
 		margin: 0 0.3em;
+	}
+	.time-count__text{
+		font-size: 6rem;
+    	line-height: 10rem;
 	}
 	/* #time-count {
 		padding: 1758px 1171px;
